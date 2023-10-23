@@ -21,8 +21,7 @@
 
 namespace WPEFramework {
 namespace Plugin {
-     namespace {
-
+    namespace {
         static Metadata<SsoWeather> metadata(
             // Version
             1, 0, 0,
@@ -67,7 +66,6 @@ namespace Plugin {
             service->Unregister(&_notification);
 
             if (_implementation != nullptr) {
-
                 Exchange::JSsoWeather::Unregister(*this);
                 _implementation->Unregister(&_weatherNotification);
 

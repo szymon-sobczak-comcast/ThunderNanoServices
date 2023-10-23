@@ -121,11 +121,12 @@ namespace Plugin {
 
         void Deactivated(RPC::IRemoteConnection* connection);
 
-        uint32_t _connectionId;
         Exchange::IVolumeControl* _implementation;
+        uint32_t _connectionId;
         PluginHost::IShell* _service;
         Core::Sink<ConnectionNotification> _connectionNotification;
         Core::Sink<VolumeNotification> _volumeNotification;
+
     };
 
 } // namespace Plugin
